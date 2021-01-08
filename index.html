@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:300,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top" id="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <div class="logo">
+            <a class="logo__link" href="/">
+              <img class="logo__img" src="images/logo-2.png" alt="SportLife">
+            </a>
+          </div>
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__link" href="about-us.html">О клубе</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="service.html">Услуги</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="prices.html">Цены</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="team.html">Команда</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="gallery.html">Галерея</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="blog.html">Блог</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="contacts.html">Контакты</a>
+              </li>
+              <li class="menu__list-item header__phone">
+                <a class="header__phone-link" href="tel:80935433112">0462 610 540</a>
+              </li>
+              <!-- <li class="menu__list-item header__admin">
+                <a class="header__registration-link admin-popup" href="admin.html">Админпанель</a>
+              </li> -->
+              <li class="menu__list-item header__registration">
+                <a class="header__registration-link registration-popup" href="registration.html">Регистрация</a>
+                <span>/</span>
+                <a class="header__registration-link login-popup" href="authorization.html">Войти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="header__content">
+      <div class="container">
+        <div class="header__content-wrapper">
+          <h1 class="header__content-title">Сделайте свое тело <br>
+            <span>Красивым</span> </h1>
+          <div class="header__content-text">Хочешь узнать как это сделать, свяжись с нами</div>
+          <a href="#popup-form" class="popup__header-form header__content-btn btn wow tada">Связаться</a>
+        </div>
+      </div>
+    </div>
+    <div class="header__slider">
+      <div class="header__slider-item header__slider-main" style="background-image: url(images/header-1.jpg);"></div>
+      <div class="header__slider-item header__slider-none" style="background-image: url(images/header-2.jpg);"></div>
+      <div class="header__slider-item header__slider-none" style="background-image: url(images/header-3.jpg);"></div>
+      <div class="header__slider-item header__slider-none" style="background-image: url(images/header-4.jpg);"></div>
+      <div class="header__slider-item header__slider-none" style="background-image: url(images/header-5.jpg);"></div>
+      
+  </header>
+
+  <section class="about">
+
+    <div class="online-form online-form__modal wow fadeInUp" data-wow-duration="1.5s" id="online-form__modal">
+      <div class="online-form__bg">
+    
+          <img src="images/online-form1.jpg" alt="bg man">
+        
+      </div>
+      <div class="online-form__content">
+        <h3 class="online-form__title title"><span>Получи бесплатную тренировку</span> <br>
+          Online Бронирование</h3>
+          <p class="text-danger" id="error_messages"></p>
+        <form action="" class="online-form__form">
+          <div class="online-form__person-wrapper">
+            <input type="text" class="online-form__item form__item-person" id="form-person" placeholder="1 человек"
+              list="num-person">
+            <label class="online-form__label form-person__label" for="form-person"></label>
+            <datalist id="num-person">
+              <option value="1">
+              <option value="2">
+              <option value="3">
+              <option value="4">
+              <option value="5">
+            </datalist>
+          </div>
+          <div class="online-form__date-wrapper">
+            <input type="date" class="online-form__item form__item-date" id="form-date" value="2020-04-19">
+            <label class="online-form__label form-date__label" for="form-date"></label>
+          </div>
+          <div class="online-form__time-wrapper">
+            <input type="text" class="online-form__item form__item-time" placeholder="Время" list="form-time">
+            <label class="online-form__label form-time__label" for="form-time"></label>
+            <datalist id="form-time">
+              <option value="9.00-11.00">
+              <option value="14.00-16.00">
+              <option value="16.00-18.00">
+              <option value="18.00-20.00">
+              <option value="20.00-22.00">
+            </datalist>
+          </div>
+          <input type="text" class="online-form__item" placeholder="Имя">
+          <input type="tel" class="online-form__item" placeholder="Телефон">
+          <input type="email" class="online-form__item" placeholder="E-mail">
+        </form>
+        <button type="submit" href="#" class="online-form__btn btn">Заказать</button>
+      </div>
+    </div>
+
+    <div class="about__bg wow fadeInRight" data-wow-offset="500" data-wow-duration="1.5s">
+      <img src="images/about2.png" alt="about" class="about__bg-img">
+    </div>
+    <div class="container">
+      <div class="about__text">
+        <h3 class="about__text-title title">Добро пожаловать в sport<span>life</span></h3>
+        <p class="about__text-subtitle">
+          Наша основная задача - сделать вашу жизнь энергичной и
+          радостной, придать сил и научить открывать новые горизонты.
+          Потому что при подобных занятиях у человека появляеться не
+          только возможность ежедневного улучшения физического
+          самочувствия, но и достижения духовной гармонии.
+        </p>
+        <p class="about__text-description">
+          Регулярные зянятия фитнесом помогут вам в реализации
+          планов, дадут возможность жить полноценной жизнью и
+          почувствовать счастье от собственных достижений.
+          Забронируйте место и начните нову жизнь сейчасю
+        </p>
+      </div>
+
+      <div class="about__advantages-inner wow fadeInLeftBig" data-wow-duration="1.5s">
+        <div class="about__advantages-item">
+          <div class="advantages-item__text advantages-item__text-1">
+            Команда
+            професионалов
+          </div>
+        </div>
+        <div class="about__advantages-item">
+          <div class="advantages-item__text advantages-item__text-2">
+            Эксклюзивное
+            спортивное
+            оборудование
+          </div>
+        </div>
+        <div class="about__advantages-item">
+          <div class="advantages-item__text advantages-item__text-3">
+            Индивидуальный
+            подход к
+            тренировкам
+          </div>
+        </div>
+        <div class="about__advantages-item">
+          <div class="advantages-item__text advantages-item__text-4">
+            Расположение
+            в центре
+            города
+          </div>
+        </div>
+      </div>
+      <a href="about-us.html" class="about__text-btn btn">Посетить нас</a>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <h3 class="services__title title">Каждая тренировка делает вас <span>лучше</span></h3>
+      <div class="services__subtitle">
+        У нас вы можете выбрать любое направление которое вам больше нравиться
+      </div>
+      <div class="services-slider">
+        <div class="services-slider__item services-slider__item-1  wow fadeInUpBig" data-wow-duration="1.3s">
+          <div class="services__item-img">
+            <img src="images/services-1.jpg" alt="services" class="services__img">
+          </div>
+          <div class="services__text">
+            <div class="services__text-wrapper">
+              <div class="services-slider__title">Базовый <span>crossfit</span></div>
+              <div class="services-slider__text">
+                У нас работают профессионалы и
+                победители многих
+                соревнований по crossfit.
+              </div>
+            </div>
+            <a href="service.html" class="services-slider__btn btn">Узнать больше</a>
+          </div>
+        </div>
+        <div class="services-slider__item services-slider__item-2  wow fadeInUpBig" data-wow-duration="1.6s">
+          <div class="services__item-img">
+            <img src="images/services-2.jpg" alt="services" class="services__img">
+          </div>
+          <div class="services__text">
+            <div class="services__text-wrapper">
+              <div class="services-slider__title"><span>Тренажорный </span>Зал</div>
+              <div class="services-slider__text">
+                Поренеруйтесь в фитнес-группах
+                или с персональным
+                сертифицированным тренером в
+                нашем тренажорном зале.
+              </div>
+            </div>
+            <a href="service.html" class="services-slider__btn btn">Узнать больше</a>
+          </div>
+        </div>
+        <div class="services-slider__item services-slider__item-3  wow fadeInUpBig" data-wow-duration="1.9s">
+          <div class="services__item-img">
+            <img src="images/services-3.jpg" alt="services" class="services__img">
+          </div>
+          <div class="services__text">
+            <div class="services__text-wrapper">
+              <div class="services-slider__title">Занятия <span>Йогой</span></div>
+              <div class="services-slider__text">
+                Что вы думаете о йоге? Если у вас
+                есть страсть к этому занятию, у
+                нас есть специальная программа.
+              </div>
+            </div>
+            <a href="service.html" class="services-slider__btn btn">Узнать больше</a>
+          </div>
+        </div>
+        <div class="services-slider__item services-slider__item-4  wow fadeInUpBig">
+          <div class="services__item-img">
+            <img src="images/services-4.jpg" alt="services" class="services__img">
+          </div>
+          <div class="services__text">
+            <div class="services__text-wrapper">
+              <div class="services-slider__title">Занятия <span>Аэробикой</span></div>
+              <div class="services-slider__text">
+                Растягивайтесь, качайтесь, танцуйте
+                и прыгайте! Становитесь красивей
+                и здоровее вместе с нами!
+              </div>
+            </div>
+            <a href="service.html" class="services-slider__btn btn">Узнать больше</a>
+          </div>
+        </div>
+        <div class="services-slider__item services-slider__item-5  wow fadeInUpBig">
+          <div class="services__item-img">
+            <img src="images/services-5.jpg" alt="services" class="services__img">
+          </div>
+          <div class="services__text">
+            <div class="services__text-wrapper">
+              <div class="services-slider__title">Занятия <span>Пилатесом</span></div>
+              <div class="services-slider__text">
+                Занимайтесь пилатесом чтобы
+                укрепить мышцы, развить гибкость
+                и улучшить физическую форму.
+              </div>
+            </div>
+            <a href="service.html" class="services-slider__btn btn">Узнать больше</a>
+          </div>
+        </div>
+        <div class="services-slider__item services-slider__item-6  wow fadeInUpBig">
+          <div class="services__item-img">
+            <img src="images/services-6.jpg" alt="services" class="services__img">
+          </div>
+          <div class="services__text">
+            <div class="services__text-wrapper">
+              <div class="services-slider__title">Лечебный <span>Maccaж</span></div>
+              <div class="services-slider__text">
+                Занимайтесь пилатесом чтобы
+                укрепить мышцы, развить гибкость
+                и улучшить физическую форму.
+              </div>
+            </div>
+            <a href="service.html" class="services-slider__btn btn">Узнать больше</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="trainer" style="background-image: url(images/trainer.jpg);">
+    <div class="trainer-blackout"></div>
+    <div class="container">
+      <div class="trainer__wrapper">
+        <h2 class="trainer__title"><span>У нас есть тренировки с <br>
+          </span> персональным тренером</h2>
+        <a href="team.html" class="trainer__btn btn  wow tada" data-wow-offset="300">Наша команда</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="schedule">
+    <div class="schedule__img wow bounceInRight" data-wow-duration="1.5s" data-wow-offset="400">
+      <img src="images/schedule.jpg" alt="schedule">
+    </div>
+    <div class="container">
+      <h3 class="schedule__title title">Смотрите <span>Расписание</span> тренировок</h3>
+      <div class="schedule__inner" id="training-time">
+        <div class="schedule__inner-day">
+          <div class="schedule__day-item" v-for="(d, key) of days">
+            <a href="#" class="schedule-day" :class="{'schedule__btn--active': day == days[key]}"
+              @click.prevent="getTraining(key)"> {{days[key]}} </a>
+            <span class="schedule-day__data" v-if="day == days[key]">{{data}}</span>
+          </div>
+        </div>
+        <div class="schedule__inner-item">
+          <div :class="[isActive ? 'schedule__item-sunday--active' : 'schedule__item']" v-for="training in trainings">
+            <a href="#" class="schedule__item-time"> {{training.time}} </a>
+            <span class="schedule__icon"></span>
+            <div class="schedule__item-title"> {{training.name}} </div>
+            <div class="schedule__item-trener"> {{training.trener}} </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <h3 class="reviews__title title"><span>Отзывы</span> наших клиентов</h3>
+      <div class="reviews__slider-inner">
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-img">
+            <img src="images/reviews.jpg" alt="reviews" class="reviews-img">
+          </div>
+          <div class="reviews__slider-text">
+            <div class="reviews__text-title">Евгений Огнивенко <span>12.04.2020</span></div>
+            <p class="reviews-text wow fadeInUp" data-wow-offset="200">
+              Равным образом консультация с широким активом играет важную роль в формировании систем массового участия.
+              С другой стороны рамки и место обучения кадров позволяет оценить значение соответствующий условий
+              активизации.
+            </p>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-img">
+            <img src="images/reviews.jpg" alt="reviews" class="reviews-img">
+          </div>
+          <div class="reviews__slider-text">
+            <div class="reviews__text-title">Евгений Огнивенко <span>12.04.2020</span></div>
+            <p class="reviews-text  wow fadeInUp" data-wow-offset="200">
+              Равным образом консультация с широким активом играет важную роль в формировании систем массового участия.
+              С другой стороны рамки и место обучения кадров позволяет оценить значение соответствующий условий
+              активизации.
+            </p>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-img">
+            <img src="images/reviews.jpg" alt="reviews" class="reviews-img">
+          </div>
+          <div class="reviews__slider-text">
+            <div class="reviews__text-title">Евгений Огнивенко <span>12.04.2020</span></div>
+            <p class="reviews-text">
+              Равным образом консультация с широким активом играет важную роль в формировании систем массового участия.
+              С другой стороны рамки и место обучения кадров позволяет оценить значение соответствующий условий
+              активизации.
+            </p>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-img">
+            <img src="images/reviews.jpg" alt="reviews" class="reviews-img">
+          </div>
+          <div class="reviews__slider-text">
+            <div class="reviews__text-title">Евгений Огнивенко <span>12.04.2020</span></div>
+            <p class="reviews-text">
+              Равным образом консультация с широким активом играет важную роль в формировании систем массового участия.
+              С другой стороны рамки и место обучения кадров позволяет оценить значение соответствующий условий
+              активизации.
+            </p>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-img">
+            <img src="images/reviews.jpg" alt="reviews" class="reviews-img">
+          </div>
+          <div class="reviews__slider-text">
+            <div class="reviews__text-title">Евгений Огнивенко <span>12.04.2020</span></div>
+            <p class="reviews-text">
+              Равным образом консультация с широким активом играет важную роль в формировании систем массового участия.
+              С другой стороны рамки и место обучения кадров позволяет оценить значение соответствующий условий
+              активизации.
+            </p>
+          </div>
+        </div>
+        <div class="reviews__slider-item">
+          <div class="reviews__slider-img">
+            <img src="images/reviews.jpg" alt="reviews" class="reviews-img">
+          </div>
+          <div class="reviews__slider-text">
+            <div class="reviews__text-title">Евгений Огнивенко <span>12.04.2020</span></div>
+            <p class="reviews-text">
+              Равным образом консультация с широким активом играет важную роль в формировании систем массового участия.
+              С другой стороны рамки и место обучения кадров позволяет оценить значение соответствующий условий
+              активизации.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="communication">
+    <div class="communication-blackout"></div>
+    <div class="communication__wrapper-bg">
+      <div class="communication__form-bg communication-img"
+        style="background-image: url(images/communication-form.jpg);"></div>
+      <div class="communication__phone-bg communication-img"
+        style="background-image: url(images/communication-phone.jpg);"></div>
+    </div>
+    <div class="container">
+      <div class="communication__text-inner">
+        <div class="communication__text-item">
+          <div class="communication__text-subtitle subtitle-online">Заполняй online форму</div>
+          <div class="communication__text-title title">Получи гостевой визит</div>
+          <a href="#online-form__modal" class="communication__text-btn communication__btn-left btn wow fadeIn"
+            data-wow-offset="300">Заполнить</a>
+        </div>
+        <div class="communication__text-item communication__item-phone">
+          <div class="communication__text-subtitle subtitle-phone">Позвони нам</div>
+          <div class="communication__text-title title">8 (093) 54 33 112</div>
+          <a href="contacts.html" class="communication__text-btn communication__btn-right btn wow fadeIn"
+            data-wow-offset="300">Связаться</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__info">
+          <div class="footer__info-logo">
+            <a class="logo__link" href="#">
+              <img class="logo__img" src="images/footer-logo.png" alt="SportLife">
+            </a>
+          </div>
+          <p class="footer__info-text">
+            Фитнес клуб премиум класса, расположен
+            в самом центре Чернигова по адресу
+            ул. Пятницкая 72, рядом с ТРЦ “Мегацентр”,
+            общая площадь 2500 м2.
+          </p>
+          <div class="footer__info-social">
+            Мы в соцсетях:
+            <a href="#" class="footer__social-facebook footer-social"></a>
+            <a href="#" class="footer__social-instagram footer-social"></a>
+            <a href="#" class="footer__social-telegram footer-social"></a>
+            <a href="#" class="footer__social-viber footer-social"></a>
+          </div>
+          <form action="" class="footer__info-form">
+            <label for="footer-form" class="footer__form-label">Подпишитесь на разсылку</label>
+            <div class="footer__form-group">
+              <input type="email" class="footer-form" id="footer-form" placeholder="Введите Email...">
+              <button type="submit" class="footer-btn">Подписаться</button>
+            </div>
+          </form>
+        </div>
+        <div class="footer__blog">
+          <h5 class="footer__blog-title">Блоги</h5>
+          <div class="footer__blog-inner">
+            <a href="#" class="footer__blog-item">
+              <div class="footer__blog-img">
+                <img src="images/footer__blog-1.jpg" alt="footer blog">
+              </div>
+              <p class="footer__blog-text">
+                Делимся рецептами правильного
+                питания. Раскажем как правильно
+                сочетать продукты.
+              </p>
+            </a>
+            <a href="#" class="footer__blog-item">
+              <div class="footer__blog-img">
+                <img src="images/footer__blog-2.jpg" alt="footer blog">
+              </div>
+              <p class="footer__blog-text">
+                Наши тренера раскажут как
+                получить максимум удовольствия
+                от тренировок.
+              </p>
+            </a>
+            <a href="#" class="footer__blog-item">
+              <div class="footer__blog-img">
+                <img src="images/footer__blog-3.jpg" alt="footer blog">
+              </div>
+              <p class="footer__blog-text">
+                Раскажем с чего начать если
+                вы не можете найти ответ
+                на этот вопрос.
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="footer__instagram">
+          <h5 class="footer__instagram-title">Instagram</h5>
+          <div class="zoom-gallery footer__instagram-inner">
+            <a href="images/footer-instagram/footer__instagram-1.jpg" class="footer__instagram-item">
+              <img src="images/footer__instagram-1.jpg" alt="footer instagram">
+            </a>
+            <a href="images/footer-instagram/footer__instagram-2.jpg" class="footer__instagram-item">
+              <img src="images/footer__instagram-2.jpg" alt="footer instagram">
+            </a>
+            <a href="images/footer-instagram/footer__instagram-3.jpg" class="footer__instagram-item">
+              <img src="images/footer__instagram-3.jpg" alt="footer instagram">
+            </a>
+            <a href="images/footer-instagram/footer__instagram-4.jpg" class="footer__instagram-item">
+              <img src="images/footer__instagram-4.jpg" alt="footer instagram">
+            </a>
+            <a href="images/footer-instagram/footer__instagram-5.jpg" class="footer__instagram-item">
+              <img src="images/footer__instagram-5.jpg" alt="footer instagram">
+            </a>
+            <a href="images/footer-instagram/footer__instagram-6.jpg" class="footer__instagram-item">
+              <img src="images/footer__instagram-6.jpg" alt="footer instagram">
+            </a>
+            <a href="images/footer-instagram/footer__instagram-7.jpg" class="footer__instagram-item">
+              <img src="images/footer__instagram-7.jpg" alt="footer instagram">
+            </a>
+            <a href="images/footer-instagram/footer__instagram-8.jpg" class="footer__instagram-item">
+              <img src="images/footer__instagram-8.jpg" alt="footer instagram">
+            </a>
+            <a href="images/footer-instagram/footer__instagram-9.jpg" class="footer__instagram-item">
+              <img src="images/footer__instagram-9.jpg" alt="footer instagram">
+            </a>
+            <a href="#" class="footer__instagram-item">
+              <img src="images/footer__instagram-10.jpg" alt="footer instagram">
+            </a>
+            <a href="#" class="footer__instagram-item">
+              <img src="images/footer__instagram-11.jpg" alt="footer instagram">
+            </a>
+            <a href="#" class="footer__instagram-item">
+              <img src="images/footer__instagram-12.jpg" alt="footer instagram">
+            </a>
+          </div>
+          <a href="gallery.html" class="footer__instagram-subtitle"> Много красивых фотографий</a>
+        </div>
+      </div>
+      <p class="footer-copyright wow fadeInUp">&copy; Фитнес-клуб "<a class="footer-link" href="https://sport-life.fun" >SportLife</a>", 2020</p>
+    </div>
+  </footer>
+
+  <form class="contacts__form contacts__form-popup" id="popup-form">
+    <h3 class="contacts-title contacts__form-title">Узнать цену</h3>
+    <p class="contacts__form-subtitle">Напишите нам</p>
+    <p class="text-danger" id="error_messages"></p>
+    <label for="contacts__form-name" class="contacts__label contacts__label-name"></label>
+    <input type="text" id="contacts__form-name" class="contacts__input contacts__input-name" placeholder="Ваше имя">
+    <label for="contacts__form-email" class="contacts__label contacts__label-email"></label>
+    <input type="email" id="contacts__form-email" class="contacts__input contacts__input-email"
+      placeholder="Ваш E-mail">
+    <label for="contacts__form-phone" class="contacts__label contacts__label-phone"></label>
+    <input type="tel" id="contacts__form-phone" class="contacts__input contacts__input-phone" placeholder="Ваш телефон">
+    <button type="submit" class="contacts__btn btn">Отправить</button>
+  </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
+  <script src="js/training-time.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
